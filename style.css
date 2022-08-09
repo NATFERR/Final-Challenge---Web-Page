@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@700&display=swap');
+
+* {
+margin: 0 auto;
+padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    /* width: 100%; ???? */
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3125rem;
+    line-height: 1.6;
+    color:black
+}
+
+/*design scrollbar - use with careful consideration - browzer support not complete*/
+
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #6649b8;
+}
+
+.section-middle,
+.section-footer {
+    display: none;
+}
+
+p {
+    margin-top: 1em;
+}
+
+.header {
+    padding: 1.5em 0;
+    background-color: #2E323F;
+   /*para fazer menu barra lateral fixa*/
+}
+
+.container {
+    width: 85%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* fazer um botão para o menu com posição relativa/absoluta, pseudo-elementos como :hover, etc */
+.nav-menu {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    flex-grow: 1;
+    margin: 1em;
+}
+
+/*design links*/
+a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    margin-top: .5em;
+}
+
+/*design nav list (não é possível configurar margem e padding nos links pois são inline-items.*/
+
+.button {
+    background-color: #A59678;
+    padding: .5em .5em;
+    border-radius: 80px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.button:hover,
+.button:focus {
+    opacity: .75;
+}
+
+img {
+    max-width: 100%;
+    margin-bottom: 1em;
+}
+
+.intro {
+    background-color: #3B4050;
+    padding: 3em 0;
+}
+
+.intro-title {
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 1.1;
+    margin-bottom: 1em;
+}
+
+.section-final {
+    margin-top: 1em;
+}
+
+.secondary-text {
+    color: #fff;
+    margin-bottom: 1em;
+}
+
+.text-accent {
+    color: #A59678;
+}
+
+.oswald-bold {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 1.1;
+}
+
+.another-section {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.box {
+    max-width: 300px;
+    background-color: #3B4050;
+    padding: 2em;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+}
