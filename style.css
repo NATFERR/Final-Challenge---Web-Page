@@ -46,7 +46,6 @@ p {
 .header {
     padding: 1.5em 0;
     background-color: #2E323F;
-   /*para fazer menu barra lateral fixa*/
 }
 
 .container {
@@ -55,14 +54,14 @@ p {
     margin: 0 auto;
 }
 
-/* fazer um botão para o menu com posição relativa/absoluta, pseudo-elementos como :hover, etc */
-.nav-menu {
+/********************************************************************* fazer um botão para o menu com posição relativa/absoluta, pseudo-elementos como :hover, etc */
+/* .nav-menu {
     display: flex;
     flex-direction: column; 
     align-items: center;
     flex-grow: 1;
     margin: 1em;
-}
+} */
 
 /*design links*/
 a {
@@ -140,4 +139,29 @@ img {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 1em;
+}
+
+.icone-menu {
+    color: var(--first-color);
+}
+
+/*CHECKBOX*/
+#check {
+    display: none;
+}
+
+#icone-menu {
+    cursor: pointer;
+    padding: 15px;
+    position: absolute;
+    z-index: 1;
+}
+
+.navbar {
+    background-color: #3B4050;
+    border: red;
+   height: 100%; 
+   max-width: 700px;
+   position: absolute;
+   transition: all .2s linear;
 }
