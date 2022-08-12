@@ -17,9 +17,11 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.3125rem;
     line-height: 1.6;
-    color:black
+    color:black;
 }
 
+
+/*******************************************************************************************************/
 /*design scrollbar - use with careful consideration - browzer support not complete*/
 
 body::-webkit-scrollbar {
@@ -33,43 +35,53 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
     background: #6649b8;
 }
+/*******************************************************************************************************/
 
-.section-middle,
-.section-footer {
-    display: none;
-}
-
+/*text display style*/
 p {
     margin-top: 1em;
 }
 
-.header {
-    padding: 1.5em 0;
-    background-color: #2E323F;
-}
 
 .container {
-    width: 85%;
+    width: 80%;
     max-width: 700px;
     margin: 0 auto;
 }
 
+header {
+    padding: 1.5em 0;
+    background-color: #2E323F;
+}
+
+
 /********************************************************************* fazer um botão para o menu com posição relativa/absoluta, pseudo-elementos como :hover, etc */
-/* .nav-menu {
+.navbar {
     display: flex;
-    flex-direction: column; 
+    justify-content: space-between;
     align-items: center;
-    flex-grow: 1;
-    margin: 1em;
-} */
+}
+
+.nav-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
 
 /*design links*/
-a {
+.nav-link {
     text-transform: uppercase;
     text-decoration: none;
     color: #fff;
-    margin-top: .5em;
 }
+
+.nav-item {
+    margin-right: 1em;
+}
+
+
 
 /*design nav list (não é possível configurar margem e padding nos links pois são inline-items.*/
 
@@ -88,7 +100,6 @@ a {
 
 img {
     max-width: 100%;
-    margin-bottom: 1em;
 }
 
 .intro {
@@ -100,9 +111,16 @@ img {
     color: #fff;
     font-family: 'Oswald', sans-serif;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 90px;
     line-height: 1.1;
     margin-bottom: 1em;
+}
+
+.intro-split {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
 }
 
 .section-final {
@@ -141,27 +159,12 @@ img {
     margin-bottom: 1em;
 }
 
-.icone-menu {
-    color: var(--first-color);
-}
 
-/*CHECKBOX*/
-#check {
+
+
+
+/*for small screens 
+.section-middle,
+.section-footer {
     display: none;
-}
-
-#icone-menu {
-    cursor: pointer;
-    padding: 15px;
-    position: absolute;
-    z-index: 1;
-}
-
-.navbar {
-    background-color: #3B4050;
-    border: red;
-   height: 100%; 
-   max-width: 700px;
-   position: absolute;
-   transition: all .2s linear;
-}
+}*/
